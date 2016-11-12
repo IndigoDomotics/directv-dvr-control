@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<Actions>
+	<Action id="sendKeyPress">
+		<Name>Send Key Press</Name>
+		<CallbackMethod>sendKeyPress</CallbackMethod>
+		<ConfigUI>
+			<Field id="address" type="textfield">
+				<Label>DVR Address:</Label>
+			</Field>
+			<Field id="clientMAC" type="textfield" defaultValue="0">
+				<Label>Client MAC:</Label>
+			</Field>
+			<Field id="label1" type="label" fontSize="small" fontColor="darkgray" alignWithControl="true">
+				<Label>Only change if you're targeting a Genie clients.</Label>
+			</Field>
+			<Field id="keyToPress" type="menu">
+				<Label>Key to press:</Label>
+				<List>
+					<Option value="power">Power Toggle</Option>
+					<Option value="poweron">Power On</Option>
+					<Option value="poweroff">Power Off</Option>
+					<Option value="play">Play</Option>
+					<Option value="pause">Pause</Option>
+					<Option value="rew">Rewind</Option>
+					<Option value="replay">Replay</Option>
+					<Option value="stop">Stop</Option>
+					<Option value="advance">Advance</Option>
+					<Option value="ffwd">Fast Forward</Option>
+					<Option value="record">Record</Option>
+					<Option value="guide">Guide</Option>
+					<Option value="active">Active</Option>
+					<Option value="list">List</Option>
+					<Option value="exit">Exit</Option>
+					<Option value="back">Back</Option>
+					<Option value="menu">Menu</Option>
+					<Option value="info">Info</Option>
+					<Option value="up">Up</Option>
+					<Option value="down">Down</Option>
+					<Option value="left">Left</Option>
+					<Option value="right">Right</Option>
+					<Option value="select">Select</Option>
+					<Option value="red">Red</Option>
+					<Option value="green">Green</Option>
+					<Option value="yellow">Yellow</Option>
+					<Option value="blue">Blue</Option>
+					<Option value="chanup">Channel/Page Up</Option>
+					<Option value="chandown">Channel/Page Down</Option>
+					<Option value="prev">Previous Channel</Option>
+					<Option value="0">0</Option>
+					<Option value="1">1</Option>
+					<Option value="2">2</Option>
+					<Option value="3">3</Option>
+					<Option value="4">4</Option>
+					<Option value="5">5</Option>
+					<Option value="6">6</Option>
+					<Option value="7">7</Option>
+					<Option value="8">8</Option>
+					<Option value="9">9</Option>
+					<Option value="enter">Enter</Option>
+					<Option value="dash">Dash</Option>
+					<Option value="format">Format</Option>
+				</List>
+			</Field>
+			<Field id="description" type="textfield" hidden="true">
+				<Label></Label>
+			</Field>
+		</ConfigUI>
+	</Action>
+	<Action id="setChannel">
+		<Name>Go To Channel</Name>
+		<CallbackMethod>setChannel</CallbackMethod>
+		<ConfigUI>
+			<Field id="address" type="textfield">
+				<Label>DVR Address:</Label>
+			</Field>
+			<Field id="clientMAC" type="textfield" defaultValue="0">
+				<Label>Client MAC:</Label>
+			</Field>
+			<Field id="label1" type="label" fontSize="small" fontColor="darkgray" alignWithControl="true">
+				<Label>Only change if you're targeting a Genie clients.</Label>
+			</Field>
+			<Field id="channelNumber" type="textfield">
+				<Label>Channel Number:</Label>
+			</Field>
+			<Field id="minorNumber" type="textfield" defaultValue="65535">
+				<Label>Minor (not generally changed):</Label>
+			</Field>
+			<Field id="description" type="textfield" hidden="true">
+				<Label></Label>
+			</Field>
+		</ConfigUI>
+	</Action>
+</Actions>
